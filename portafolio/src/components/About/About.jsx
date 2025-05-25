@@ -15,14 +15,13 @@ const About = () => {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I'm a passionate Full Stack Developer with expertise in modern web technologies.
-              My journey in web development started with a curiosity for creating interactive
-              and user-friendly applications.
+              I'm a passionate Full Stack Developer with expertise in modern web technologies, fueled by the same curiosity that drives my love for video games, music, and Pokémon.
+              My journey in web development began with a desire to create interactive, user-friendly applications—whether it's building seamless UIs or optimizing backend logic, I approach coding with the same enthusiasm I bring to gaming and basketball.
             </p>
             <p>
-              I specialize in building responsive web applications using React.js, Node.js,
-              and other cutting-edge technologies. My goal is to create efficient, scalable,
-              and maintainable solutions that solve real-world problems.
+              I specialize in crafting responsive web applications using React.js, Node.js, and other cutting-edge technologies.
+              Beyond coding, you’ll find me analyzing NBA stats (go Lakers!), composing playlists for focus sessions, or hunting for rare Pokémon
+              My goal? To develop efficient, scalable, and maintainable solutions—just like a well-coordinated basketball play or a perfectly balanced game mechanic.
             </p>
           </div>
           <div className="about-info">
@@ -36,8 +35,9 @@ const About = () => {
               <p>Guatemala City, Guatemala</p>
             </div>
             <div className="info-item">
-              <h3>Interests</h3>
-              <p>Web Development, AI, Cloud Computing</p>
+              <h3>Interests & Passions</h3>
+              <p>Full-Stack Development • Data Analytics • AI & LLM-Powered Design</p> 
+              <p>Basketball (Go Lakers!) • Video Game Design • Pokémon Lore • Music </p>
             </div>
           </div>
         </div>

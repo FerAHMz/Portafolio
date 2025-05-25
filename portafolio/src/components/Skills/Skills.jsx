@@ -1,20 +1,27 @@
 import { motion } from 'framer-motion';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaGitAlt, FaDocker } from 'react-icons/fa';
+import { SiCplusplus, SiC, SiKotlin, SiPostgresql, SiVuedotjs, SiVite, SiGo } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML', level: 90 },
-    { name: 'CSS', level: 80 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'React', level: 80 },
-    { name: 'Node.js', level: 75 },
-    { name: 'Python', level: 90 },
-    { name: 'Java', level: 65 },
-    { name: 'C++', level: 50 },
-    { name: 'Kotlin', level: 80 },
-    { name: 'Git', level: 95 },
-    { name: 'SQL', level: 90 }
-  ];
+    { name: 'HTML', level: 90, icon: <FaHtml5 /> },
+    { name: 'CSS', level: 80, icon: <FaCss3Alt /> },
+    { name: 'JavaScript', level: 85, icon: <FaJs /> },
+    { name: 'React', level: 80, icon: <FaReact /> },
+    { name: 'Node.js', level: 75, icon: <FaNodeJs /> },
+    { name: 'Python', level: 90, icon: <FaPython /> },
+    { name: 'Java', level: 65, icon: <FaJava /> },
+    { name: 'C++', level: 50, icon: <SiCplusplus /> },
+    { name: 'C', level: 40, icon: <SiC /> },
+    { name: 'Kotlin', level: 80, icon: <SiKotlin /> },
+    { name: 'Git', level: 95, icon: <FaGitAlt /> },
+    { name: 'SQL', level: 90, icon: <SiPostgresql /> },
+    { name: 'Docker', level: 80, icon: <FaDocker /> },
+    { name: 'Vue', level: 75, icon: <SiVuedotjs /> },
+    { name: 'Vite', level: 80, icon: <SiVite /> },
+    { name: 'Go', level: 70, icon: <SiGo /> },
+];
 
   return (
     <section id="skills" className="skills-section">
@@ -37,7 +44,10 @@ const Skills = () => {
               viewport={{ once: true }}
             >
               <div className="skill-info">
-                <span className="skill-name">{skill.name}</span>
+                <div className="skill-name-with-icon">
+                  <span className="skill-icon">{skill.icon}</span>
+                  <span className="skill-name">{skill.name}</span>
+                </div>
                 <span className="skill-percentage">{skill.level}%</span>
               </div>
               <div className="skill-bar-container">

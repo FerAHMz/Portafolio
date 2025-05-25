@@ -11,8 +11,10 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <h1>Hi, I'm <span className="highlight">Fernando Hernández</span></h1>
-        <h2>Full Stack Developer</h2>
-        <p>I create engaging web experiences with modern technologies</p>
+        <h2>Computer Science Engineering Student</h2>
+        <p>
+        Passionate about web development and data analysis, with a constant commitment to learning and technological advancement. I enjoy transforming data into valuable insights and creating innovative digital solutions, while staying current with the latest industry trends and best practices.
+        </p>
         
         <div className="hero-buttons">
           <motion.a 

@@ -8,11 +8,18 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
         <div className="navbar-logo">
-          <a href="#home">Fernando Hernández</a>
+          <a href="#" onClick={scrollToTop}>Fernando Hernández</a>
         </div>
         <div className="navbar-right">
           <button className="hamburger" onClick={toggleMenu} aria-label="Menu">

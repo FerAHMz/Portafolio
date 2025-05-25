@@ -1,79 +1,90 @@
 .hero {
-    min-height: calc(100vh - 70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  }
-  
-  .hero-content {
-    text-align: center;
-    max-width: 800px;
-  }
-  
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--color-background) 0%, #141920 100%);
+  font-family: var(--font-main);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: var(--font-main);
+  transition: all 0.3s ease;
+}
+
+/* Botón primario */
+.primary-btn {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+}
+
+/* Botón secundario */
+.secondary-btn {
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    color: #2d3436;
+    font-size: 2.5rem;
   }
-  
+
   .hero h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #636e72;
+    font-size: 1.5rem;
   }
-  
+
   .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #636e72;
+    font-size: 1rem;
   }
-  
-  .highlight {
-    color: #e4062f;
-  }
-  
+
   .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+    flex-direction: column;
   }
-  
-  .primary-btn, .secondary-btn {
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .primary-btn {
-    background-color: #e4062f;
-    color: white;
-    border: none;
-  }
-  
+
+  .primary-btn,
   .secondary-btn {
-    background-color: transparent;
-    color: #e4062f;
-    border: 2px solid #e4062f;
+    width: 100%;
   }
-  
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    
-    .hero h2 {
-      font-size: 1.5rem;
-    }
-    
-    .hero p {
-      font-size: 1rem;
-    }
-    
-    .hero-buttons {
-      flex-direction: column;
-    }
-  }
+}
